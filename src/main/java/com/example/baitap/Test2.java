@@ -8,4 +8,9 @@ public class Test2 implements Test {
     public String getAll() {
         return "test 2";
     }
+
+    @Override
+    public String getA() {
+        return null;
+    }
 }
