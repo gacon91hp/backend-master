@@ -13,4 +13,8 @@ public class ItemService {
     public String getItem(ItemType itemType){
         return itemFactory.getItem(itemType).itemOption();
     }
+
+    public String selectAll(){
+        return "thành công";
+    }
 }
