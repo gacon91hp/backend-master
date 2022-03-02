@@ -11,6 +11,6 @@ public class Test2 implements Test {
 
     @Override
     public String getA() {
-        return null;
+        return "test get A";
     }
 }
