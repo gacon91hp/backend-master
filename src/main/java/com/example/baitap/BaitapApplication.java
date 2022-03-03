@@ -8,10 +8,7 @@ import org.springframework.context.ApplicationContext;
 public class BaitapApplication {
 
 	public static void main(String[] args) {
-		System.out.printf("> truoc khi ioc khoi tao");
 		ApplicationContext context = SpringApplication.run(BaitapApplication.class, args);
-		System.out.printf("sau khi ioc khởi tạo");
-
 	}
 
 }
