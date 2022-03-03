@@ -1,5 +1,6 @@
 package com.example.baitap.service;
 
+import com.example.baitap.exception.ItemTypeException;
 import com.example.baitap.finals.InitFinal;
 import com.example.baitap.service.components.Game;
 import com.example.baitap.service.components.ItemDam;
@@ -31,7 +32,12 @@ public class GameInitializationService {
         return _HANDLER;
     }
 
-    public String createItem(int itemType){
-        return _HANDLER.get(itemType).initItem();
+    public String createItem(int itemType)  {
+        try{
+            return _HANDLER.get(itemType).initItem();
+        }catch (Exception e){
+            return InitFinal._ERROR + " " + e;
+        }
     }
+
 }

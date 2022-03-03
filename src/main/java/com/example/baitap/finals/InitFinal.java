@@ -8,5 +8,6 @@ public class InitFinal {
     public static final String _WIN = "win";
     public static final String _LOSE = "lose";
     public static final String _PEACE = "peace";
+    public static  final String _ERROR = "itemType error ?";
 
 }

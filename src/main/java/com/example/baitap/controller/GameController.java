@@ -1,5 +1,6 @@
 package com.example.baitap.controller;
 
+import com.example.baitap.exception.ItemTypeException;
 import com.example.baitap.service.GameInitializationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ public class GameController {
     private GameInitializationService gameInitializationService;
 
     @GetMapping("getItemType")
-    public String getItemType(@RequestParam int itemType){
+    public String getItemType(@RequestParam int itemType) {
         return gameInitializationService.createItem(itemType);
     }
 }
