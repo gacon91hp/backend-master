@@ -11,9 +11,9 @@ public class DongVatController {
     @Autowired
     private DongVatService dongVatService;
 
+
     @GetMapping("all")
-    public String getAll(@RequestParam String text,
-                         @RequestParam String type){
-        return dongVatService.dongVatThuocTinh(type,text);
+    public String getAll(@RequestParam String type){
+        return dongVatService.dongVatThuocTinh(type);
     }
 }

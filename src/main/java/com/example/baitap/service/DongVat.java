@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface DongVat {
-    String eat(String text);
+    String eat();
 }

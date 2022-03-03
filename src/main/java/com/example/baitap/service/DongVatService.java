@@ -11,7 +11,7 @@ public class DongVatService {
     @Autowired
     DongVatStrategy dongVatStrategy;
 
-    public String dongVatThuocTinh(String type,String text){
-        return dongVatStrategy.getDongVat(type).eat(text);
+    public String dongVatThuocTinh(String type){
+        return dongVatStrategy.getDongVat(type).eat();
     }
 }

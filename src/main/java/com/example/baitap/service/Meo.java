@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component("meo")
 public class Meo implements DongVat{
     @Override
-    public String eat(String text) {
-        return "Meo ăn " +text;
+    public String eat() {
+        return "Meo ăn ca" ;
     }
 }
